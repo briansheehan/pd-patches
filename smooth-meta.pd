@@ -2,7 +2,7 @@
 #X msg 400 612 history \$1;
 #X obj 400 571 int;
 #X floatatom 540 542 5 0 0 0 - - - 0;
-#X obj 405 542 hsl 128 15 10 1000 1 1 empty empty History -2 -8 0 10 #fcfcfc #000000 #000000 6735 0;
+#X obj 405 542 hsl 128 15 10 1000 1 1 empty empty History -2 -8 0 10 #fcfcfc #000000 #000000 2983 0;
 #X obj 29 90 fluid.stats -history 10, f 27;
 #X floatatom 29 118 5 0 0 0 - - - 12;
 #X floatatom 198 118 5 0 0 0 - - - 12;
@@ -33,7 +33,7 @@
 #X obj 782 188 outlet~;
 #X obj 737 90 phasor~;
 #X floatatom 581 542 5 0 0 0 - - - 12;
-#X obj 782 150 tabreader~ \$0-mean;
+#X obj 782 150 tabreader~ -loop \$0-mean;
 #X connect 0 0 11 0;
 #X connect 1 0 2 0;
 #X connect 2 0 0 0;
