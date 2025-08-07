@@ -191,6 +191,9 @@
 #X text 313 517 The inlet~ re-uses 3/4 of the previous block \, along with the 128 new samples., f 49;
 #X obj 658 813 c_sq;
 #X obj 181 813 de-noise;
+#X obj 882 805 fft-freq-select;
+#X obj 952 709 r block-params;
+#X obj 952 750 unpack f;
 #X connect 0 0 98 0;
 #X connect 1 0 47 0;
 #X connect 1 1 47 1;
@@ -298,6 +301,9 @@
 #X connect 112 0 103 0;
 #X connect 113 0 114 0;
 #X connect 114 0 115 0;
-#X connect 120 0 48 0 32.................3B.........t..........W....;
+#X connect 120 0 122 0;
 #X connect 121 0 110 0;
+#X connect 122 0 48 0;
+#X connect 123 0 124 0;
+#X connect 124 0 122 1;
 #X coords 0 0 1 1 338 165 2 27 140;
