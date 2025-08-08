@@ -2,7 +2,7 @@
 #X floatatom 110 110 8 0 0 0 - - - 16;
 #X msg 22 79 2;
 #X obj 51 79 pow;
-#X floatatom 110 80 5 0 20 0 - - - 12;
+#X floatatom 110 80 5 0 0 0 - - - 12;
 #X obj 20 41 t b f;
 #X obj 110 148 outlet;
 #X obj 110 17 inlet;
