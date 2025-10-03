@@ -6,8 +6,8 @@
 #X floatatom 372 159 5 0 0 0 - - - 12;
 #X obj 463 66 loadbang;
 #X obj 411 191 tgl 25 0 empty empty empty 17 7 0 10 #e4e4e4 #4d4d4d #373737 0 1;
-#X obj 415 233 + 1;
-#X floatatom 415 258 5 0 0 0 - - - 12;
+#X obj 411 245 + 1;
+#X floatatom 411 270 5 0 0 0 - - - 12;
 #X text 358 197 Enabled;
 #X obj 119 87 inlet~;
 #X obj 90 452 outlet~;
@@ -28,7 +28,7 @@
 #X connect 3 1 1 1;
 #X connect 4 0 19 1;
 #X connect 5 0 2 0;
-#X connect 5 0 6 0;
+#X connect 5 0 7 0;
 #X connect 6 0 7 0;
 #X connect 7 0 8 0;
 #X connect 8 0 16 0;
