@@ -15,10 +15,6 @@
 #X floatatom 406 235 5 0 0 0 - - - 12;
 #X text 351 170 Enabled;
 #X text 377 38 Gain;
-#X obj 158 153 *;
-#X obj 158 51 inlet;
-#X obj 158 81 unpack f;
-#X text 226 80 blocksize;
 #X connect 0 0 4 0;
 #X connect 0 0 10 0 32.................K.....7++++B.....++++2P....;
 #X connect 2 0 7 0 32.................U....n4+++eE....Z9+++KE....;
@@ -30,14 +26,11 @@
 #X connect 5 0 10 1;
 #X connect 6 0 8 0;
 #X connect 7 0 3 0;
-#X connect 8 0 16 1;
+#X connect 8 0 7 1;
 #X connect 9 0 6 0;
 #X connect 9 0 12 0;
 #X connect 10 0 1 0;
 #X connect 11 0 12 0;
 #X connect 12 0 13 0;
 #X connect 13 0 10 0;
-#X connect 16 0 7 1;
-#X connect 17 0 18 0;
-#X connect 18 0 16 0;
 #X coords 0 0 1 1 90 156 2 345 37;
