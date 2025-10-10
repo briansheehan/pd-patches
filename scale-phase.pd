@@ -3,11 +3,11 @@
 #X obj 91 339 outlet~;
 #X obj 121 103 car2pol~, f 11;
 #X obj 121 221 pol2car~, f 11;
-#X obj 315 40 knob 50 0 1 2 0 empty empty #E4E4E4 #B7B7B7 #4D4D4D 1 0 0 0 1 270 0 0 0;
+#X obj 315 40 knob 50 0 1 2 0 empty empty #E4E4E4 #B7B7B7 #4D4D4D 1 0 0 0 1 270 0 0 0 empty empty 0 0 0 0 0 0 0 0;
 #X obj 121 55 snake~ out, f 11;
 #X obj 121 261 snake~, f 10;
 #X floatatom 315 103 5 0 0 0 - - - 12;
-#X obj 174 161 *~;
+#X obj 181 165 *~;
 #X obj 403 6 loadbang;
 #X obj 91 295 select~;
 #X obj 355 137 tgl 25 0 empty empty empty 17 7 0 10 #e4e4e4 #4d4d4d #373737 0 1;

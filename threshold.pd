@@ -52,6 +52,10 @@
 #X text 535 145 i.e. divide by two if windowing is ON, f 16;
 #X text 390 68 Blocksize is maximum magnitude;
 #X obj 490 173 t b f;
+#X floatatom 734 321 5 0 0 0 - - - 12;
+#X floatatom 829 321 5 0 0 0 - - - 12;
+#X obj 390 294 t f f;
+#X obj 437 294 t f f;
 #X connect 1 0 5 0;
 #X connect 1 0 7 0 32.................K.....7++++B.....++++2P....;
 #X connect 3 0 11 0;
@@ -89,8 +93,8 @@
 #X connect 35 0 33 0;
 #X connect 36 0 39 0;
 #X connect 39 0 48 0;
-#X connect 40 0 13 1;
-#X connect 41 0 13 2;
+#X connect 40 0 55 0;
+#X connect 41 0 56 0;
 #X connect 42 0 41 0;
 #X connect 42 0 40 0;
 #X connect 42 1 41 1;
@@ -102,4 +106,8 @@
 #X connect 48 0 42 0;
 #X connect 52 0 48 0;
 #X connect 52 1 48 1;
+#X connect 55 0 13 1;
+#X connect 55 1 53 0;
+#X connect 56 0 13 2;
+#X connect 56 1 54 0;
 #X coords 0 0 1 1 151 253 2 724 121;
