@@ -12,8 +12,8 @@
 #X floatatom 232 300 5 0 0 0 - - - 12;
 #X text 197 299 Exp:;
 #X obj 37 328 unpack s f;
-#X obj 135 201 knob 50 0 1 2 0 empty empty #E4E4E4 #B7B7B7 #4D4D4D 1 0 0 0 1 270 0 0 0 empty empty 0 0 0 0 0 0 0 0;
-#X obj 219 201 knob 50 0 1 2 0 empty empty #E4E4E4 #B7B7B7 #4d4d4d 1 0 0 0 1 270 0 0 0 empty empty 0 0 0 0 0 0 0 0;
+#X obj 135 201 knob 50 0 1 4 0 empty empty #E4E4E4 #B7B7B7 #4D4D4D 1 0 0 0 1 270 0 0 0 empty empty 0 0 0 0 0 0 0 0;
+#X obj 219 201 knob 50 0 1 4 0 empty empty #E4E4E4 #B7B7B7 #4d4d4d 1 0 0 0 1 270 0 0 0 empty empty 0 0 0 0 0 0 0 0;
 #X obj 141 395 t f f f;
 #X obj 225 395 t f f;
 #X obj 447 345 -;
