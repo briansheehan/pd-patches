@@ -15,8 +15,8 @@
 #X obj 126 153 fexpr~ ($f2 <= $x1) && ($x1 <= $f3);
 #X text 960 336 Enabled:;
 #X text 905 111 Magnitude Threshold;
-#X obj 899 24 inlet;
-#X text 939 19 Exponential for knobs;
+#X obj 1019 40 inlet;
+#X text 1019 18 Exponential for knobs;
 #X obj 1057 340 loadbang;
 #X obj 899 140 range-knob;
 #X obj 365 581 range~, f 19;
@@ -25,8 +25,8 @@
 #X obj 477 663 snapshot~;
 #X floatatom 365 689 6 0 0 0 - - - 16;
 #X floatatom 477 689 4 0 0 0 - - - 16;
-#X obj 1094 24 inlet;
-#X obj 1094 67 s \$0-block-params;
+#X obj 1214 40 inlet;
+#X obj 1214 83 s \$0-block-params;
 #X obj 324 526 r \$0-block-params;
 #X obj 365 724 print min;
 #X obj 477 724 print max;
@@ -40,8 +40,8 @@
 #X obj 608 227 *;
 #X obj 561 178 t b f;
 #X text 175 849 Magnitude doesn't exceed (fft size)/2 when windowing is used;
-#X obj 1312 24 inlet;
-#X obj 1312 67 s \$0-windowing;
+#X obj 1432 40 inlet;
+#X obj 1432 83 s \$0-windowing;
 #X obj 661 105 r \$0-windowing;
 #X obj 661 133 + 1;
 #X obj 561 135 /;
@@ -60,6 +60,9 @@
 #X obj 175 208 sig~ 1;
 #X obj 608 262 t f f;
 #X obj 561 276 t f f;
+#X obj 899 40 inlet;
+#X text 880 18 Lowest magnitude;
+#X obj 809 -56 r ctl-mag;
 #X connect 1 0 5 0;
 #X connect 1 0 7 0 32.................K.....7++++B.....++++2P....;
 #X connect 3 0 11 0;
@@ -77,7 +80,7 @@
 #X connect 11 0 4 0;
 #X connect 13 0 52 0;
 #X connect 13 0 57 1;
-#X connect 16 0 19 0;
+#X connect 16 0 19 1;
 #X connect 18 0 9 0;
 #X connect 19 0 37 0;
 #X connect 19 1 38 0;
@@ -119,4 +122,6 @@
 #X connect 59 1 49 0;
 #X connect 60 0 13 1;
 #X connect 60 1 48 0;
+#X connect 61 0 19 0;
+#X connect 63 0 19 0;
 #X coords 0 0 1 1 149 254 2 896 109;

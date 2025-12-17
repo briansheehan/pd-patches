@@ -63,6 +63,7 @@
 #X floatatom 360 577 5 0 0 0 - - - 12;
 #X floatatom 427 577 5 0 0 0 - - - 12;
 #X obj 149 568 t a a b;
+#X obj 46 150 r ctl-block-size;
 #X connect 0 0 9 0 32.................E....L9+++eA....i++++aL....;
 #X connect 1 0 4 0;
 #X connect 2 0 0 0;
@@ -116,4 +117,5 @@
 #X connect 63 1 34 0;
 #X connect 63 2 62 0;
 #X connect 63 2 61 0;
+#X connect 64 0 0 0;
 #X coords 0 0 1 1 477 151 2 175 227;
