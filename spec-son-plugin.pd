@@ -18,7 +18,7 @@
 #X obj 373 162 osc~ 220;
 #X obj 99 197 select~ 4, f 46;
 #X obj 586 991 MT6\ Abstractions/bs-detect-frequencies;
-#X obj 250 382 spec-son;
+#X obj 250 390 spec-son;
 #N canvas 0 0 450 250 (subpatch) 0;
 #X array \$0-sound-file 4.88706e+07 float 2;
 #X coords 0 1 4.88706e+07 -1 200 140 1;
@@ -29,10 +29,10 @@
 #X obj 201 111 soundfiler;
 #X obj 158 27 t b b;
 #X obj 267 -50 bng 25 250 50 0 empty empty empty 17 7 0 10 #e4e4e4 #4d4d4d #373737;
-#X obj -355 99 tabplayer~;
-#X obj 158 137 tabplayer~ -loop \$0-sound-file;
+#X obj 158 137 tabplayer~ -speed 100 -loop \$0-sound-file;
 #X connect 2 0 3 0;
 #X connect 3 0 0 0;
+#X connect 3 0 0 1;
 #X connect 4 0 16 0;
 #X connect 5 0 18 4;
 #X connect 6 0 5 0;
@@ -54,8 +54,8 @@
 #X connect 20 0 21 0;
 #X connect 21 0 23 0;
 #X connect 22 0 24 0;
-#X connect 24 0 27 0;
+#X connect 24 0 26 0;
 #X connect 24 1 20 0;
 #X connect 25 0 24 0;
-#X connect 27 0 16 1;
+#X connect 26 0 16 1;
 #X coords 0 0 1 1 482 158 0;
