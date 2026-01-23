@@ -22,8 +22,8 @@
 #X obj 728 9 inlet;
 #X text 765 4 Knob exponent (power of two);
 #N canvas 0 0 450 250 (subpatch) 0;
-#X array \$0-band-pass 8191 float 2;
-#X coords 0 1.1 8191 -0.1 200 140 1;
+#X array \$0-band-pass 32767 float 2;
+#X coords 0 1.1 32767 -0.1 200 140 1;
 #X restore 892 282 graph;
 #X obj 185 181 tabreceive~ \$0-band-pass;
 #X obj 727 571 write-bandpass \$0-band-pass, f 28;
@@ -89,7 +89,7 @@
 #X connect 16 1 45 0;
 #X connect 17 0 5 0;
 #X connect 19 0 39 0;
-#X connect 20 0 16 0;
+#X connect 20 0 16 1;
 #X connect 23 0 60 1;
 #X connect 23 0 61 0;
 #X connect 25 0 27 0;

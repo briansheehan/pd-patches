@@ -12,8 +12,8 @@
 #X floatatom 394 320 5 0 0 0 - - - 12;
 #X text 359 318 Exp:;
 #X obj 199 348 unpack s f;
-#X obj 297 221 knob 50 0 1 4 0 empty empty #E4E4E4 #B7B7B7 #4D4D4D 1 0 0 0 1 270 0 0 0 empty empty 0 0 0 0 0 0 0 0;
-#X obj 381 221 knob 50 0 1 4 0 empty empty #E4E4E4 #B7B7B7 #4d4d4d 1 0 0 0 1 270 0 0 0 empty empty 0 0 0 0 0 0 0 0;
+#X obj 297 221 knob 50 0 1 0 0 empty empty #E4E4E4 #B7B7B7 #4D4D4D 1 0 0 0 1 270 0 0 0 empty empty 0 0 0 0 0 0 0 0;
+#X obj 381 221 knob 50 0 1 0 0 empty empty #E4E4E4 #B7B7B7 #4d4d4d 1 0 0 0 1 270 0 0 0 empty empty 0 0 0 0 0 0 0 0;
 #X obj 303 415 t f f f;
 #X obj 387 415 t f f;
 #X obj 609 365 -;
@@ -45,7 +45,7 @@
 #X text 303 908 Don't send knob values directly to outlets \, just store in value objects until next DSP cycle completes. This makes sure that a cascade of messages only happens once per DSP cycle even if knob has been moved about alot, f 54;
 #X obj 124 24 inlet;
 #X text 79 -7 Lowest magnitude, f 11;
-#X text 199 -7 Exponent factor for knobs, f 14;
+#X text 243 -6 Exponent factor for knobs, f 14;
 #X connect 2 0 29 0;
 #X connect 3 0 8 0;
 #X connect 8 0 13 0;
