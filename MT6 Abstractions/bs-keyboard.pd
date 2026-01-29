@@ -1,14 +1,3 @@
-#N canvas 827 239 527 327 12;
-#X obj 10 20 keyboard 16 80 4 2 0 0 empty empty;
-#X obj 10 114 unpack;
-#X obj 215 177 noteout;
-#X floatatom 151 127 5 0 0 0 - - - 12;
-#X floatatom 297 127 5 0 0 0 - - - 12;
-#X text 90 127 Pitch;
-#X text 229 126 Velocity;
-#X connect 0 0 1 0;
-#X connect 1 0 3 0;
-#X connect 1 1 4 0;
-#X connect 3 0 2 0;
-#X connect 4 0 2 1;
-#X coords 0 0 1 1 475 161 1 0 0;
+version https://git-lfs.github.com/spec/v1
+oid sha256:c81dfaef7d19274ca32189b5fbf4623aa576339615bf637f052fb5a185f8ad08
+size 384

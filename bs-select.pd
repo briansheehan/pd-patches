@@ -1,18 +1,3 @@
-#N canvas 827 239 527 327 12;
-#X obj 291 105 pack f f;
-#X obj 291 174 route 0 1;
-#X obj 291 139 reverse;
-#X obj 159 3 inlet;
-#X obj 374 3 inlet;
-#X text 8 2 Messages to be routed;
-#X text 249 2 0 to route to first outlet \, 1 to route to second, f 17;
-#X obj 328 211 print bs-select error:;
-#X obj 249 255 outlet;
-#X obj 308 255 outlet;
-#X connect 0 0 2 0;
-#X connect 1 0 8 0;
-#X connect 1 1 9 0;
-#X connect 1 2 7 0;
-#X connect 2 0 1 0;
-#X connect 3 0 0 0;
-#X connect 4 0 0 1;
+version https://git-lfs.github.com/spec/v1
+oid sha256:b561b5dfd31285bd09e6bf0aa2ca97e42470e2946aad7804427a0e651901068b
+size 477

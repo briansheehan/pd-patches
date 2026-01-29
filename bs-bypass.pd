@@ -1,14 +1,3 @@
-#N canvas 827 239 527 327 12;
-#X obj 33 62 inlet~;
-#X obj 33 357 outlet~;
-#X obj 33 313 select~;
-#X obj 155 194 tgl 25 0 empty empty empty 17 7 0 10 #e4e4e4 #4d4d4d #373737 0 1;
-#X obj 155 237 + 1;
-#X floatatom 155 262 5 0 0 0 - - - 16;
-#X text 92 197 Bypass;
-#X connect 0 0 2 0;
-#X connect 2 0 1 0;
-#X connect 3 0 4 0;
-#X connect 4 0 5 0;
-#X connect 5 0 2 0 32.................L....b3+++OC....G9+++2A....;
-#X coords 0 0 1 1 100 36 2 88 189;
+version https://git-lfs.github.com/spec/v1
+oid sha256:8cb65a86405dee8f38a4ea871f1a6440813753259c4125a9b6d493b8227753dc
+size 442
