@@ -4,7 +4,7 @@
 #A saved;
 #X obj 615 655 meter~;
 #X obj 407 600 noise~;
-#X obj 357 296 loadbang;
+#X obj 415 287 loadbang;
 #X obj 400 407 soundfiler;
 #X obj 357 323 t b b;
 #X obj 312 296 bng 25 250 50 0 empty empty empty 17 7 0 10 #e4e4e4 #4d4d4d #373737;
@@ -26,7 +26,7 @@
 #X obj 400 353 symbol \$0-sound-file-1;
 #X msg 1164 353 read -resize nuclear-holocaust-48k.wav \$1;
 #X obj 357 463 tabplayer~ -loop \$0-sound-file-1;
-#X obj 734 296 loadbang;
+#X obj 767 287 loadbang;
 #X obj 777 407 soundfiler;
 #X obj 734 323 t b b;
 #X obj 689 296 bng 25 250 50 0 empty empty empty 17 7 0 10 #e4e4e4 #4d4d4d #373737;
@@ -59,7 +59,6 @@
 #X connect 1 0 2 0;
 #X connect 2 0 34 0;
 #X connect 3 0 0 1;
-#X connect 4 0 6 0;
 #X connect 5 0 8 0;
 #X connect 6 0 19 0;
 #X connect 6 1 17 0;
@@ -74,7 +73,6 @@
 #X connect 14 1 5 0;
 #X connect 17 0 48 0;
 #X connect 19 0 0 0;
-#X connect 20 0 22 0;
 #X connect 21 0 24 0;
 #X connect 22 0 26 0;
 #X connect 22 1 27 0;
