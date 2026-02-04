@@ -1,0 +1,16 @@
+#N canvas 827 239 734 565 12;
+#X obj 54 301 chorus.m~;
+#A saved 0.1 0 0;
+#A saved;
+#A saved;
+#A saved;
+#X obj 54 511 output~;
+#X obj 253 301 drive.m~;
+#A saved 0.024 0;
+#A saved;
+#A saved;
+#X obj 54 222 adc~;
+#X obj 170 73 text;
+#X connect 0 0 1 0;
+#X connect 3 0 2 0;
+#X connect 3 0 0 0;
