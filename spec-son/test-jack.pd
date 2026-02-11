@@ -1,0 +1,15 @@
+#N canvas 827 239 734 565 12;
+#X obj 168 34 adc~;
+#X obj 168 346 output~;
+#X obj 168 104 drive.m~;
+#A saved 0.552 1;
+#A saved;
+#A saved;
+#X obj 372 108 crusher.m~;
+#A saved 0.369664 0.04 0.64 1;
+#A saved;
+#A saved;
+#A saved;
+#A saved;
+#X connect 0 0 2 0;
+#X connect 2 0 1 0;
