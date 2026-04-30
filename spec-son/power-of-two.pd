@@ -34,6 +34,9 @@
 #X obj 18 299 s \$1-s;
 #X obj 18 259 r \$1-r;
 #X text 66 260 Receive and send to allow saving and loading of presets with [daw-state], f 24;
+#X obj 195 360 bng 25 250 50 0 empty empty empty 0 -10 0 10 #e4e4e4 #4d4d4d #373737;
+#X obj 195 397 print \$1-r;
+#X obj 286 397 print \$1-s;
 #X connect 1 0 5 0;
 #X connect 2 0 3 0;
 #X connect 3 0 1 0;
@@ -67,4 +70,6 @@
 #X connect 30 0 23 0;
 #X connect 31 0 27 0;
 #X connect 33 0 8 0;
+#X connect 35 0 36 0;
+#X connect 35 0 37 0;
 #X coords 0 0 1 1 101 86 2 100 50;
