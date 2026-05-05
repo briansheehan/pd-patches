@@ -38,9 +38,9 @@
 #X obj 23 41 r win-s;
 #X obj 43 124 s win-r;
 #X obj 267 156 print norm-r;
-#X obj 469 156 print block-size-r;
+#X obj 491 156 print block-size-r;
 #X obj 895 153 print sampling-ratio-r;
-#X obj 674 153 print overlap-ratio-r;
+#X obj 694 153 print overlap-ratio-r;
 #X obj 45 63 print win-s;
 #X obj 258 63 print norm-s;
 #X obj 491 63 print block-size-s;

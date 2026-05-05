@@ -1,4 +1,4 @@
-#N canvas 827 239 527 327 12;
+#N canvas 827 239 1485 849 12;
 #X obj 776 385 cnv 15 275 301 empty empty empty 20 12 0 14 #5ab74c #373737 0;
 #X obj 1077 385 cnv 15 280 144 empty empty empty 20 12 0 14 #00b775 #373737 0;
 #X obj 490 120 cnv 15 235 114 empty empty empty 20 12 0 14 #b76c98 #373737 0;
@@ -23,8 +23,8 @@
 #X obj 724 7 inlet;
 #X text 761 2 Knob exponent (power of two);
 #N canvas 0 0 450 250 (subpatch) 0;
-#X array \$0-band-pass 1023 float 2;
-#X coords 0 1.1 1023 -0.1 200 140 1;
+#X array \$0-band-pass 127 float 2;
+#X coords 0 1.1 127 -0.1 200 140 1;
 #X restore -114 41 graph;
 #X obj 185 181 tabreceive~ \$0-band-pass;
 #X obj 836 578 write-bandpass \$0-band-pass, f 28;
@@ -68,7 +68,7 @@
 #X obj 24 256 + 1;
 #X floatatom 24 287 5 0 0 0 - - - 16;
 #X obj 24 220 loadbang;
-#X obj 518 533 tgl 25 0 empty empty empty 17 7 0 10 #e4e4e4 #4d4d4d #373737 0 1;
+#X obj 508 537 tgl 25 0 empty empty empty 17 7 0 10 #e4e4e4 #4d4d4d #373737 0 1;
 #X obj 703 779 s freq-link-s;
 #X obj 388 555 s freq-flip-s;
 #X obj 593 779 s freq-exp-s;
@@ -85,7 +85,6 @@
 #X obj 779 419 r freq-lower-s;
 #X obj 935 417 r freq-upper-s;
 #X obj 593 748 log 2;
-#X obj 973 229 print \$0-highest-bin;
 #X connect 3 0 7 0;
 #X connect 3 0 9 0 32.................K.....7++++B.....++++2P....;
 #X connect 5 0 18 0;
@@ -134,7 +133,6 @@
 #X connect 47 1 45 1;
 #X connect 47 1 46 1;
 #X connect 48 0 47 0;
-#X connect 48 0 83 0;
 #X connect 49 0 52 0;
 #X connect 49 1 35 0;
 #X connect 49 2 25 0;
